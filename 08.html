@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carta Para Quem Tem Medo Do Futuro</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+        font-family: "Open Sans", serif;
+        color: #fff;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      header img {
+        width: 160px;
+        max-width: 80%;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: 3.5rem;
+        color: #ffe082;
+      }
+
+      .subtexto {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      h2 {
+        font-family: "Great Vibes", cursive;
+        font-size: 3.5rem;
+        color: #ffe082;
+        text-align: left;
+      }
+
+      .carta {
+        max-width: 700px;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        font-size: 1.2em;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        text-align: left;
+
+      }
+
+      h2::before {
+        content: '"';
+        font-size: 3em;
+        color: #ffe082;
+        line-height: 0;
+        vertical-align: top;
+        margin-right: 10px;
+      }
+
+      .carta p {
+        margin-bottom: 16px;
+      }
+
+      .signature {
+        text-align: right;
+        font-style: italic;
+        margin-top: 20px;
+      }
+
+      .section {
+        max-width: 800px;
+        text-align: center;
+        margin-bottom: 30px;
+         font-size: 20px;
+      }
+
+      a.button {
+        display: inline-block;
+        padding: 12px 24px;
+        margin: 10px;
+        background-color: #ffe082;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      a.button:hover {
+        background-color: #ffd54f;
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #ccc;
+      }
+
+      @media (max-width: 480px) {
+        .carta, .section {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="carta.jpg" alt="Carta do Céu" class="logo" />
+
+      <h1>Carta do céu</h1>
+      <p class="subtexto">
+        Uma mensagem que veio do alto, direto para o seu coração.
+      </p>
+    </header>
+    <div class="carta">
+      <h2>🕊️ Filho amado,</h2>
+
+      <p>
+        Eu sei o que você sente. Sei que o futuro parece uma sombra incerta, um
+        mar desconhecido onde você teme se afogar. Você pensa nos “e se” com
+        medo. “E se der errado?” “E se eu não conseguir?” “E se tudo for em
+        vão?”
+      </p>
+
+      <p>
+        Mas Eu preciso que você ouça com o coração: Eu já estou lá. Eu não
+        apenas vejo o futuro — Eu sou o seu futuro.
+      </p>
+
+      <p>
+        Você não precisa controlar tudo. Você só precisa segurar a Minha mão.
+        Guarde este momento com carinho. Você faz a diferença!
+      </p>
+
+      <p>
+        Você acha que está sozinho nessa caminhada, mas Eu tenho andado ao seu
+        lado em silêncio, preparando cada detalhe do que está por vir.
+      </p>
+      <p>
+        O que hoje parece incerto, amanhã fará sentido. Porque Eu sou um Pai que
+        não erra. E os Meus planos são maiores que os seus medos.
+      </p>
+
+      <p>
+        Confia. Não porque tudo está claro, mas porque Eu sou luz até no escuro.
+      </p>
+
+    
+      <div class="signature">- Com fidelidade eterna,<br />Deus.</div>
+    </div>
+
+     <div class="section">
+      <h3>Sobre o Projeto</h3>
+      <p>
+        Esse site nasceu como uma forma simples e direta de evangelismo.<br />
+        Através de QR Codes espalhados por aí, queremos que as pessoas saibam
+        que o Céu continua eviando cartas.<br />
+        Que Deus continua falando. E que você é precioso(a) demais para ser
+        esquecido.
+      </p>
+    </div>
+
+    <div class="section">
+    <h3>Nos siga no Instagram</h3>
+    <a
+      href="https://www.instagram.com/nicollas_azevedoc/"
+      class="button"
+      target="_blank"
+      >Meu instagram</a
+    >
+    <a
+      href="https://www.instagram.com/carta.do.ceus?igsh=MTIyZjN4dWRtczByZw=="
+      class="button"
+      target="_blank"
+      >Instagram do Projeto</a
+    >
+    </div>
+    <footer>
+      Feito com amor e propósito. Todos os direitos reservados &copy; Carta do
+      Céu
+    </footer>
+  </body>
+
+  <script>
+    window.onload = function () {
+      const carta = document.querySelector(".carta");
+      carta.style.opacity = 0;
+      setTimeout(() => {
+        carta.style.transition = "opacity 2s ease-in-out";
+        carta.style.opacity = 1;
+      }, 500); // 1 segundo de espera antes de mostrar a carta
+    };
+  </script>
+</html>
